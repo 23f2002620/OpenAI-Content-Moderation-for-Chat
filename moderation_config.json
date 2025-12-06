@@ -1,0 +1,19 @@
+{
+  "model": "omni-moderation-latest",
+  "thresholds": {
+    "sexual_and_erotic": 0.80,
+    "violence": 0.80,
+    "hate": 0.80,
+    "self_harm": 0.80,
+    "harassment": 0.80,
+    "sexual_minors": 0.50,
+    "scam": 0.80,
+    "other": 0.80
+  },
+  "actions": {
+    "block": ["sexual_and_erotic","violence","hate","self_harm","sexual_minors","scam"],
+    "review": ["harassment","other"]
+  },
+  "auto_block_confidence": 0.80,
+  "per_message_delay_ms": 200
+}
